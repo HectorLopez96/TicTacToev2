@@ -199,14 +199,14 @@ public class Tictactoe {
     }
 
     public static int solicitarNumero(String mensaje, int limiteInferior, int limiteSuperior) {
-        int numeroIngresado = 0;
+        int enterednumber = 0;
         boolean hayErrorNumeroIngresado;
         do {
             try {
 
                 System.out.println("\n" + mensaje);
-                numeroIngresado = scanner.nextInt();
-                if ((numeroIngresado >= limiteInferior) && (numeroIngresado <= limiteSuperior)) {
+                enterednumber = scanner.nextInt();
+                if ((enterednumber >= limiteInferior) && (enterednumber <= limiteSuperior)) {
                     hayErrorNumeroIngresado = false;
                 } else {
                     hayErrorNumeroIngresado = true;
@@ -223,6 +223,6 @@ public class Tictactoe {
             }
             scanner.nextLine();
         } while (hayErrorNumeroIngresado);
-        return numeroIngresado;
+        return enterednumber;
     }
 }
